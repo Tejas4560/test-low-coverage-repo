@@ -9,7 +9,7 @@
                                                                                                                                                                   
   jobs:                                                                                                                                                           
     ai-tests:                                                                                                                                                     
-      uses: Tejas4560/Tech_Demo/.github/workflows/ai-test-pipeline.yml@TEST6
+      uses: Tejas4560/Tech_Demo/.github/workflows/ai-test-pipeline.yml@TEST6                                                                                      
       permissions:                                                                                                                                                
         contents: write                                                                                                                                           
         pages: write                                                                                                                                              
@@ -17,9 +17,10 @@
         id-token: write                                                                                                                                           
       with:                                                                                                                                                       
         min_coverage: 80                                                                                                                                          
-        delta_threshold: '0'    # No coverage regression allowed                                                                                                  
+        delta_threshold: '0'                                                                                                                                      
         deploy_pages: 'true'                                                                                                                                      
+        bug_validation: 'seeded'    # Options: seeded, mutation, off                                                                                              
       secrets:                                                                                                                                                    
         AZURE_OPENAI_API_KEY: ${{ secrets.AZURE_OPENAI_API_KEY }}                                                                                                 
         AZURE_OPENAI_ENDPOINT: ${{ secrets.AZURE_OPENAI_ENDPOINT }}                                                                                               
-        AZURE_OPENAI_DEPLOYMENT: ${{ secrets.AZURE_OPENAI_DEPLOYMENT }}  
+        AZURE_OPENAI_DEPLOYMENT: ${{ secrets.AZURE_OPENAI_DEPLOYMENT }} 
