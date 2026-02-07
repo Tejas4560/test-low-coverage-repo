@@ -1,0 +1,16 @@
+{
+  "file_map": {
+    "test_integ_20260207_220722_01.py": "test_app.py",
+    "test_integ_20260207_220722_02.py": "test_app.py",
+    "test_unit_20260207_220722_01.py": "test_app.py",
+    "test_unit_20260207_220722_02.py": "test_app.py"
+  },
+  "source_stems": [
+    "app"
+  ],
+  "stats": {
+    "input_files": 4,
+    "output_files": 1,
+    "removed": 4
+  }
+}
